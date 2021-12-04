@@ -9,10 +9,13 @@ int main() {
 	ifstream dataFile;
 	dataFile.open("C:\\Users\\ONeXt\\source\\repos\\Advent of Code\\1-1.txt");
 
-	while (!dataFile.eof()) {
-		dataFile >> temp;
-		depthMeasurements.push_back(temp);
-		i++;
+	if (dataFile.is_open()) {
+		while (!dataFile.eof()) {
+			dataFile >> temp;
+			depthMeasurements.push_back(temp);
+			i++;
+		}
+		dataFile.close();
 	}
 
 	A = depthMeasurements[0] + depthMeasurements[1] + depthMeasurements[2];
@@ -33,6 +36,7 @@ int main() {
 	
 	return 0;
 }
+//No functions were used due to lack of reusability in the program*
 //Would a better solution make use of vectors/arrays to store the numbers
 //in threegroups and compare them that way?
 //Overuse of conditionals? 
