@@ -9,10 +9,13 @@ int main(){
 	ifstream dataFile;
 	dataFile.open("C:\\Users\\ONeXt\\source\\repos\\Advent of Code\\1-1.txt"); 
 
-	while (!dataFile.eof()) {
-		dataFile >> temp;
-		depthMeasurements.push_back(temp);
-		i++;
+	if (dataFile.is_open()) {
+		while (!dataFile.eof()) {
+			dataFile >> temp;
+			depthMeasurements.push_back(temp);
+			i++;
+		}
+		dataFile.close();
 	}
 	for (int j = 1; j < depthMeasurements.size(); j++) {
 		if ((depthMeasurements[j] - depthMeasurements[j - 1]) > 0) {
