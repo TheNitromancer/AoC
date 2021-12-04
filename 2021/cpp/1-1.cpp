@@ -23,3 +23,8 @@ int main(){
 
 	return 0;
 }
+/*First functional attempt at the first puzzle. 
+Thought I could maybe take the measurements directly from the website, but that's a bit out of my current reach, 
+so I instead copied everything into a .txt and read the data from there. I'm sure there are far more elegant and/or efficient solutions, but hey! It works!!
+Hope I'll be swifter programming the following puzzles now I've polished some of the rust off.
+On with the coding!*/
