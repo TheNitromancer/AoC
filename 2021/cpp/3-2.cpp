@@ -78,7 +78,7 @@ int main() {
 
 	listToVector(binList, crunchedBinaries);
 
-	cout << getRating(binList, 'o') << endl << getRating(binList, 'c');
+	cout << getRating(binList, 'o') * getRating(binList, 'c');
 	
 	return 0;
 }	//What can I say other than: P A I N
